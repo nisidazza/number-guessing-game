@@ -24,14 +24,20 @@ namespace NumberGuessingGame
                 }
                 else if (userInput < winNum)
                 {
-                    Console.WriteLine("Go low! Guess higher...");
+                    Console.WriteLine("Too low! Guess higher...");
                 }
                 else if (userInput == winNum)
                 {
                     Console.WriteLine("YOU WIN!!!");
                     win = true;
                 }
+
+                Console.WriteLine();
             } while (win == false);
+
+            Console.WriteLine("Thank you for playing the game!");
+            Console.Write("Press any key to finish.");
+            Console.ReadKey(true);
         }
     }
 }
