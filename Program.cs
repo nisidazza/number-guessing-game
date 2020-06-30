@@ -7,6 +7,8 @@ namespace NumberGuessingGame
         static void Main(string[] args)
         {
             Random rand = new Random();
+
+            int winNum = rand.Next(0, 100);
         }
     }
 }
