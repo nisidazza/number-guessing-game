@@ -18,7 +18,19 @@ namespace NumberGuessingGame
                 string s = Console.ReadLine();
                 int userInput = int.Parse(s);
 
-
+                if (userInput > winNum)
+                {
+                    Console.WriteLine("Too high! Guess lower...");
+                }
+                else if (userInput < winNum)
+                {
+                    Console.WriteLine("Go low! Guess higher...");
+                }
+                else if (userInput == winNum)
+                {
+                    Console.WriteLine("YOU WIN!!!");
+                    win = true;
+                }
             } while (win == false);
         }
     }
