@@ -6,7 +6,7 @@ namespace NumberGuessingGame
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Random rand = new Random();
         }
     }
 }
